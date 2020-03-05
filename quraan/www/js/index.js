@@ -67,13 +67,13 @@ var app = {
 
         var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
 
-        inAppBrowserbRef = cordova.InAppBrowser.open('http://sherif.realdeal.com.eg/quran/', '_self', 'location=no,toolbar=no,zoom=no');
+        inAppBrowserbRef = cordova.InAppBrowser.open('http://sherif.realdeal.com.eg/quran/index.php/reader/?url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
 
         //admob
      // Set AdMobAds options:
       admob.setOptions({
-        publisherId:           "ca-app-pub-7251676025279948/8792017912",  // Required
-        interstitialAdId:      "ca-app-pub-7251676025279948/2226609565",  // Optional
+        publisherId:           "ca-app-pub-7251676025279948/5210343664",  // Required
+        interstitialAdId:      "ca-app-pub-7251676025279948/2986122112",  // Optional
         autoShowBanner:        true,                                      // Optional
         autoShowRInterstitial: false,                                     // Optional
         autoShowRewarded:      false,                                     // Optional
