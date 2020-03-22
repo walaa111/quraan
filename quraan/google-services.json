@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905263301667",
+    "firebase_url": "https://lasttest-31454.firebaseio.com",
+    "project_id": "lasttest-31454",
+    "storage_bucket": "lasttest-31454.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905263301667:android:2685592900f9991fe5dd96",
+        "android_client_info": {
+          "package_name": "com.realdealagency.quraanappmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905263301667-n18p5qb9jv5jf1dsr7c63641ldrfdfc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCcSCXX0onu7MalQJfijEMg0EJ8O3ib-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905263301667-n18p5qb9jv5jf1dsr7c63641ldrfdfc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
