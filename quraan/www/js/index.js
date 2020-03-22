@@ -67,7 +67,7 @@ var app = {
 
         var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
 
-        inAppBrowserbRef = cordova.InAppBrowser.open('http://sherif.realdeal.com.eg/quran/index.php/reader/?url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
+        inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/index.php/reader/?url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
 
         //admob
      // Set AdMobAds options:
@@ -91,6 +91,25 @@ var app = {
       // Request rewarded ad (will present automatically when autoShowRewarded is set to true)
       admob.requestRewardedAd();
        //admob
+
+
+       //onesignal
+       // Add to index.js or the first page that loads with your app.
+// For Intel XDK and please add this to your app.js.
+
+document.addEventListener('deviceready', function () {
+  // Enable to debug issues.
+  window.plugins.OneSignal.setLogLevel({logLevel: 6, visualLevel: 0});
+  alert("test")
+  var notificationOpenedCallback = function(jsonData) {
+    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+  };
+
+  window.plugins.OneSignal
+    .startInit("1efd3206-9517-4006-b656-8fd0e9465981")
+    .handleNotificationOpened(notificationOpenedCallback)
+    .endInit();
+}, false);
     },
 
 
