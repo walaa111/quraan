@@ -25,6 +25,14 @@ module.exports = [
       "window.admob",
       "window.tappx"
     ]
+  },
+  {
+    "id": "cordova-plugin-native-spinner.SpinnerDialog",
+    "file": "plugins/cordova-plugin-native-spinner/www/SpinnerDialog.js",
+    "pluginId": "cordova-plugin-native-spinner",
+    "clobbers": [
+      "SpinnerDialog"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -34,7 +42,8 @@ module.exports.metadata =
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-connectivity-monitor": "1.2.2",
   "cordova-play-services-version-adapter": "1.0.2",
-  "cordova-admob": "5.1.0"
+  "cordova-admob": "5.1.0",
+  "cordova-plugin-native-spinner": "1.1.3"
 };
 // BOTTOM OF METADATA
 });
