@@ -69,9 +69,7 @@ var app = {
 
         inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
  window.plugins.spinnerDialog.show("Loading","Loading...");
-        setTimeout(function(){
-            window.plugins.spinnerDialog.hide();
-        }, 5000);
+      
         //admob
      // Set AdMobAds options:
       admob.setOptions({
