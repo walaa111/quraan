@@ -68,8 +68,7 @@ var app = {
         var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
 
         inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
- window.plugins.spinnerDialog.show("Loading","Loading...");
-      
+  
         //admob
      // Set AdMobAds options:
       admob.setOptions({
@@ -93,7 +92,8 @@ var app = {
       admob.requestRewardedAd();
        //admob
 
-
+ window.plugins.spinnerDialog.show("Loading","Loading...");
+    
 
     },
 
