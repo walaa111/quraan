@@ -33,14 +33,6 @@ module.exports = [
     "clobbers": [
       "SpinnerDialog"
     ]
-  },
-  {
-    "id": "cordova-plugin-splashscreen.SplashScreen",
-    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-    "pluginId": "cordova-plugin-splashscreen",
-    "clobbers": [
-      "navigator.splashscreen"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -51,8 +43,7 @@ module.exports.metadata =
   "cordova-connectivity-monitor": "1.2.2",
   "cordova-play-services-version-adapter": "1.0.2",
   "cordova-admob": "5.1.0",
-  "cordova-plugin-native-spinner": "1.1.3",
-  "cordova-plugin-splashscreen": "5.0.4-dev"
+  "cordova-plugin-native-spinner": "1.1.3"
 };
 // BOTTOM OF METADATA
 });
