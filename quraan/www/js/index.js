@@ -68,12 +68,7 @@ inAppBrowserbRef.addEventListener('loadstart', function() {
   alert("yes");
 });
 */
-inAppBrowserbRef.addEventListener('loadstart', function() {
-navigator.notification.activityStart('', 'Loading ...');
-}, false);
-inAppBrowserbRef.addEventListener('loadstop', function() {
-navigator.notification.activityStop();
-}, false);
+
         //admob
      // Set AdMobAds options:
       admob.setOptions({
