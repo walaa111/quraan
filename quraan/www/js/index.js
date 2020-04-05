@@ -64,11 +64,8 @@ var app = {
 
         //lines added inappbrowser
 
+        var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
 
-        var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
-
-        inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
-  
         //admob
      // Set AdMobAds options:
       admob.setOptions({
@@ -92,18 +89,7 @@ var app = {
       admob.requestRewardedAd();
        //admob
 
- window.plugins.spinnerDialog.show("Loading","Loading...");
-    function onPrompt(results) {
-    alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
-}
 
-navigator.notification.prompt(
-    'Please enter your name',  // message
-    onPrompt,                  // callback to invoke
-    'Registration',            // title
-    ['Ok','Exit'],             // buttonLabels
-    'Jane Doe'                 // defaultText
-);
 
     },
 
