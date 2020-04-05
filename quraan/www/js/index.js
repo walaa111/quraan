@@ -63,7 +63,7 @@ var app = {
         this.receivedEvent('deviceready');
 super.setIntegerProperty("splashscreen", R.drawable.splash);
 super.loadUrl("file:///android_asset/www/index.html", 10000);
- var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hidespinner=no');
+ var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hidespinner=no,beforeload=yes');
 /*
 inAppBrowserbRef.addEventListener('loadstart', function() {
   alert("yes");
