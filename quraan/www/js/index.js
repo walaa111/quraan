@@ -61,8 +61,10 @@ var app = {
     onDeviceReady: function () {
 
         this.receivedEvent('deviceready');
+ var inAppBrowserbRef = cordova.InAppBrowser.open('index.html', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hidespinner=no,beforeload=yes');
 
- var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hidespinner=no,beforeload=yes');
+ var inAppBrowserbRef2 = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hidespinner=no,beforeload=yes');
+
 /*
 inAppBrowserbRef.addEventListener('loadstart', function() {
   alert("yes");
