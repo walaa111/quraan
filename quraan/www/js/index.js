@@ -62,19 +62,10 @@ var app = {
 
         this.receivedEvent('deviceready');
 
-        //lines added inappbrowser
-var options = "location=yes,hidden=yes";
-
-inAppBrowserRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self','location=no,toolbar=no,zoom=no');
-
-addEventListener('loadstop', loadStopCallBack);
-
-function loadStopCallBack() {
-
-    inAppBrowserRef.show();
-}
-       // var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no');
-
+ var inAppBrowserbRef = cordova.InAppBrowser.open('https://sherif.realdeal.com.eg/quran/reader/?id=53&sura=Al-Fatihah%20&url=https://server7.mp3quran.net/basit/001.mp3', '_self', 'location=no,toolbar=no,zoom=no,clearcache=yes,hardwareback=no');
+inAppBrowserbRef.addEventListener('loadstart', function() {
+  alert("yes");
+});
         //admob
      // Set AdMobAds options:
       admob.setOptions({
